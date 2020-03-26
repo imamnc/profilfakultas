@@ -22,7 +22,7 @@ class FakAdapter(val resepItemList: List<FakData>, val clickListener: (FakData) 
 
     class PartViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(fak: FakData, clickListener: (FakData) -> Unit) {
-            itemView.namaFak.text = fak.namaFak.toString()
+            itemView.namaFak.text = fak.namaFak
             itemView.fotoUPN.setImageResource(fak.fotoFak)
 
             itemView.setOnClickListener{clickListener(fak)}

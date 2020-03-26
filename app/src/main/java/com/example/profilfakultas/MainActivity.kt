@@ -27,9 +27,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun resepItemClicked(fakItem: FakData) {
         val showDetailActivityIntent = Intent(this, FakDetailActivity::class.java)
-        showDetailActivityIntent.putExtra(Intent.EXTRA_TEXT, fakItem.namaFak.toString())
-        showDetailActivityIntent.putExtra(Intent.EXTRA_TEMPLATE, fakItem.descFak.toString())
+        showDetailActivityIntent.putExtra(Intent.EXTRA_TEXT, fakItem.namaFak)
+        showDetailActivityIntent.putExtra(Intent.EXTRA_TEMPLATE, fakItem.descFak)
         showDetailActivityIntent.putExtra(Intent.EXTRA_REFERRER, fakItem.fotoFak.toString())
+        showDetailActivityIntent.putExtra(Intent.EXTRA_SPLIT_NAME, fakItem.emailFak)
+        showDetailActivityIntent.putExtra(Intent.EXTRA_COMPONENT_NAME, fakItem.webFak)
         startActivity(showDetailActivityIntent)
     }
 
@@ -39,35 +41,45 @@ class MainActivity : AppCompatActivity() {
             FakData(
                 "Fakultas Ilmu Komputer",
                 "Fakultas Ilmu Komputer merupakan salah satu Fakultas di UPN \"Veteran\" Jawa Timur. Yang teridiri dari program studi:\n\n" + "\t1. Prodi S1 Teknik Informatika\n" + "\t2. Prodi S1 Sistem Informasi",
-                R.drawable.upn
+                R.drawable.upn,
+                "fik@upnjatim.ac.id",
+                "http://fik.upnjatim.ac.id/"
             )
         )
         partList.add(
             FakData(
                 "Fakultas Teknik",
                 "Fakultas Teknik merupakan salah satu Fakultas di UPN \"Veteran\" Jawa Timur. Yang teridiri dari program studi:\n\n" + "\t1. Prodi S1 Teknik Kimia\n" + "\t2. Prodi S1 Teknik Industri\n" + "\t3. Prodi S1 Teknik Sipil\n" + "\t4. Prodi S1 Teknik Lingkungan\n" + "\t5. Prodi S1 Teknologi Pangan",
-                R.drawable.upn
+                R.drawable.upn,
+                "ft@upnjatim.ac.id",
+                "http://ft.upnjatim.ac.id/"
             )
         )
         partList.add(
             FakData(
                 "Fakultas Ekonomi Dan Bisnis",
                 "Fakultas Ekonomi Dan Bisnis merupakan salah satu Fakultas di UPN \"Veteran\" Jawa Timur. Yang teridiri dari program studi:\n\n" + " \t1. Prodi S1 Ekonomi Pembangunan\n" + "\t2. Prodi S1 Akuntansi\n" + "\t3. Prodi S1 Manajemen",
-                R.drawable.upn
+                R.drawable.upn,
+                "feb@upnjatim.ac.id",
+                "http://feb.upnjatim.ac.id/"
             )
         )
         partList.add(
             FakData(
                 "Fakultas Pertanian",
                 "Fakultas Pertanian merupakan salah satu Fakultas di UPN \"Veteran\" Jawa Timur. Yang teridiri dari program studi:\n\n" + "\t1. Prodi S1 Agroteknologi\n" + "\t2. Prodi S1 Agribisnis",
-                R.drawable.upn
+                R.drawable.upn,
+                "fp@upnjatim.ac.id",
+                "http://fp.upnjatim.ac.id/"
             )
         )
         partList.add(
             FakData(
                 "Imam Nurcholis",
                 "Gresik, 20 Mei 1999\n" + "Kecipik - Menganti - Gresik\n" + "+6285735692331\n" + "contact@imamnc.site\n" + "www.github.com/imamnc\n" + "SDN Boteng\n" + "SMPN 1 Menganti\n" + "SMAN 1 Cerme\n" + "Web Developer (until now)",
-                R.drawable.profil
+                R.drawable.profil,
+                "contact.imamnc@gmail.com",
+                "http://imamnc.site/"
             )
         )
         return partList

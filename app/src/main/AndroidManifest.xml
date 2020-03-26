@@ -3,6 +3,8 @@
     package="com.example.profilfakultas">
 
     <application
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -16,12 +18,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name="com.example.profilfakultas.FakDetailActivity"
             android:parentActivityName="com.example.profilfakultas.MainActivity"></activity>
+
+        <activity android:name="com.example.profilfakultas.FakWeb"
+            android:parentActivityName="com.example.profilfakultas.FakDetailActivity">
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
-
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 </manifest>
