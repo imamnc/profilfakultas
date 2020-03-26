@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
             FakData(
                 "Fakultas Ilmu Komputer",
                 "Fakultas Ilmu Komputer merupakan salah satu Fakultas di UPN \"Veteran\" Jawa Timur. Yang teridiri dari program studi:\n\n" + "\t1. Prodi S1 Teknik Informatika\n" + "\t2. Prodi S1 Sistem Informasi",
-                R.drawable.upn,
+                R.drawable.fik,
                 "fik@upnjatim.ac.id",
                 "http://fik.upnjatim.ac.id/"
             )
@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
             FakData(
                 "Fakultas Teknik",
                 "Fakultas Teknik merupakan salah satu Fakultas di UPN \"Veteran\" Jawa Timur. Yang teridiri dari program studi:\n\n" + "\t1. Prodi S1 Teknik Kimia\n" + "\t2. Prodi S1 Teknik Industri\n" + "\t3. Prodi S1 Teknik Sipil\n" + "\t4. Prodi S1 Teknik Lingkungan\n" + "\t5. Prodi S1 Teknologi Pangan",
-                R.drawable.upn,
+                R.drawable.ft,
                 "ft@upnjatim.ac.id",
                 "http://ft.upnjatim.ac.id/"
             )
@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
             FakData(
                 "Fakultas Ekonomi Dan Bisnis",
                 "Fakultas Ekonomi Dan Bisnis merupakan salah satu Fakultas di UPN \"Veteran\" Jawa Timur. Yang teridiri dari program studi:\n\n" + " \t1. Prodi S1 Ekonomi Pembangunan\n" + "\t2. Prodi S1 Akuntansi\n" + "\t3. Prodi S1 Manajemen",
-                R.drawable.upn,
+                R.drawable.feb,
                 "feb@upnjatim.ac.id",
                 "http://feb.upnjatim.ac.id/"
             )
@@ -68,7 +68,34 @@ class MainActivity : AppCompatActivity() {
             FakData(
                 "Fakultas Pertanian",
                 "Fakultas Pertanian merupakan salah satu Fakultas di UPN \"Veteran\" Jawa Timur. Yang teridiri dari program studi:\n\n" + "\t1. Prodi S1 Agroteknologi\n" + "\t2. Prodi S1 Agribisnis",
-                R.drawable.upn,
+                R.drawable.fp,
+                "fp@upnjatim.ac.id",
+                "http://fp.upnjatim.ac.id/"
+            )
+        )
+        partList.add(
+            FakData(
+                "Fakultas Hukum",
+                "Fakultas Hukum merupakan salah satu Fakultas di UPN \"Veteran\" Jawa Timur. Yang teridiri dari program studi:\n\n" + "\t1. Prodi S1 Hukum",
+                R.drawable.fh,
+                "fp@upnjatim.ac.id",
+                "http://fp.upnjatim.ac.id/"
+            )
+        )
+        partList.add(
+            FakData(
+                "Fakultas Ilmu Sosial Politik",
+                "Fakultas Ilmu Sosial Politik merupakan salah satu Fakultas di UPN \"Veteran\" Jawa Timur. Yang teridiri dari program studi:\n\n" + "\t1. Prodi S1 Ilmu Komunikasi\n \t2. Prodi S1 Administrasi Negara\n \t3. Prodi S1 Administrasi Bisnis\n \t4. Prodi S1 Hubungan Internasional",
+                R.drawable.fisip,
+                "fp@upnjatim.ac.id",
+                "http://fp.upnjatim.ac.id/"
+            )
+        )
+        partList.add(
+            FakData(
+                "Fakultas Arsitektur & Desain",
+                "Fakultas Arsitektur & Desain merupakan salah satu Fakultas di UPN \"Veteran\" Jawa Timur. Yang teridiri dari program studi:\n\n" + "\t1. Prodi S1 Desain Komunikasi Visual\n \t2. Prodi S1 Teknik Arsitektur",
+                R.drawable.fad,
                 "fp@upnjatim.ac.id",
                 "http://fp.upnjatim.ac.id/"
             )

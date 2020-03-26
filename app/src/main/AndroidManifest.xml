@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.profilfakultas">
 
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+
     <application
+        android:usesCleartextTraffic="true"
         android:hardwareAccelerated="false"
         android:largeHeap="true"
         android:allowBackup="true"
@@ -23,12 +27,12 @@
             android:parentActivityName="com.example.profilfakultas.MainActivity"></activity>
 
         <activity android:name="com.example.profilfakultas.FakWeb"
-            android:parentActivityName="com.example.profilfakultas.FakDetailActivity">
+            android:parentActivityName="com.example.profilfakultas.MainActivity">
         </activity>
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
 </manifest>
